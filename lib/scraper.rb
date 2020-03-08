@@ -12,7 +12,7 @@ class Scraper
       student_details = {}
       student_details[:name] = student.css("h4.student-name").text
       student_details[:location] = student.css("p.student-location").text
-      student_details[:profile_url] = student.css("./fixtures/student-site/").text
+      student_details[:profile_url] = student.css("a.students/").text
       students << student_details
     end
     students
