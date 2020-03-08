@@ -5,7 +5,7 @@ require 'nokogiri'
 class Scraper
 
   def self.scrape_index_page(index_url)
-    html = File.read(
+    html = File.read(index_url)
     scraper = Nokogiri::HTML(html)
     hash = {}
     
