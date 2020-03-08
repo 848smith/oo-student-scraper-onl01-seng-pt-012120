@@ -5,7 +5,7 @@ require 'nokogiri'
 class Scraper
 
   def self.scrape_index_page(index_url)
-    html = File.read('https://learn-co-curriculum.github.io/student-scraper-test-page/')
+    html = File.read(
     scraper = Nokogiri::HTML(html)
     hash = {}
     
